@@ -1,0 +1,31 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 500px;
+    margin: 0;
+    border: 5px solid #534469;
+    padding: 20px;
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: #445469;
+    color: #D3DAE3;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #534469;
+    text-align: center;
+    display: flex;
+}
