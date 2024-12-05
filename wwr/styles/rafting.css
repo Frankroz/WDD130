@@ -415,7 +415,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #000;
+    color: var(--accent-color2);
 }
 
 .design_container > a > img {
