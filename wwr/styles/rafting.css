@@ -420,4 +420,5 @@ button:hover {
 
 .design_container > a > img {
     width: 40px;
+    filter: brightness(0.8) invert(1);
 }
