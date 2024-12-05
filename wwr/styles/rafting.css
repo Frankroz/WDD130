@@ -8,12 +8,21 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 a {
     text-decoration: none;
     font-family: "Noto Sans", sans-serif;
 }
+
+/****************** Header ******************/
 
 .header {
     display: grid;
@@ -71,6 +80,12 @@ p {
     font-size: 20px;
     font-style: bold;
 }
+
+/*******************************************
+
+    About us
+
+********************************************/
 
 .hero {
     position: relative;
@@ -137,7 +152,6 @@ p {
     padding: 20px;
     display: grid;
     align-items: center;
-    
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
@@ -172,7 +186,7 @@ p {
 .img_card {
     padding: 10px;
     width: 230px;
-    border: 2px solid #001B2E;
+    border: 2px solid var(--primary-color);
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -191,6 +205,8 @@ p {
     height: auto;
     border-radius: 14px;
 }
+
+/****************** Footer ******************/
 
 footer {
     display: flex;
@@ -227,4 +243,181 @@ footer .socialm a img {
 footer .socialm a img:hover {
     transform: scale(1.2);
     filter: brightness(0.8) invert(1);
+}
+
+/*******************************************
+
+    Contact us
+
+********************************************/
+
+iframe {
+    border: 0;
+    width: 400px;
+    height: 300px;
+}
+
+.info_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 4vw;
+}
+
+.contact_img {
+    border-radius: 170px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact_info {
+    margin-left: 30px;
+}
+
+.happy_people {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.person_card {
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.person_card p {
+    text-align: center;
+    font-weight:normal;
+    font-size: 20px;
+}
+
+.person_image {
+    border-radius: 100px;
+}
+
+/****************** Form ******************/
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: bold;
+}
+
+.input_text,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent-color1);
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+textarea {
+    resize:none;
+    height: 20vh;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.button_container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 30%;
+    background-color: var(--secondary-color);
+    color: var(--accent-color2);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.design_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.design_container > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.design_container > a > img {
+    width: 40px;
 }
