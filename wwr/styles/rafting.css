@@ -422,11 +422,9 @@ button:hover {
     Home
 
 ********************************************/
-
-.hero-index {
+.hero {
     position: relative;
     text-align: center;
-    
 }
 
 .hero-img {
