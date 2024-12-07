@@ -58,27 +58,21 @@ a {
 
 h1 {
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
-    font-style: bold;
     color: var(--primary-color);
 }
 
 h2 {
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-size: 30px;
-    font-style: bold;
     color: var(--secondary-color);
 }
 
 p {
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-size: 20px;
-    font-style: bold;
 }
 
 /*******************************************
@@ -325,10 +319,8 @@ label {
     display: block;
     margin-bottom: 5px;
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-size: 15px;
-    font-style: bold;
 }
 
 .input_text,
@@ -340,7 +332,6 @@ textarea {
     font-size: 14px;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-size: 15px;
 }
