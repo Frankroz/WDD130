@@ -87,7 +87,7 @@ p {
 
 ********************************************/
 
-.hero {
+.hero-about {
     position: relative;
     width: 100%;
     height: 400px;
@@ -99,7 +99,7 @@ p {
     overflow: hidden;
 }
 
-.hero > img {
+.hero-about > img {
     position: absolute;
     top: 0;
     left: 0;
@@ -109,7 +109,7 @@ p {
     z-index: -1;
 }
 
-.hero > h1 {
+.hero-about > h1 {
     color: var(--accent-color2);
     font-size: 2.5rem;
     font-weight: bold;
@@ -117,7 +117,7 @@ p {
     margin-bottom: 20px;
 }
 
-.hero > article {
+.hero-about > article {
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--accent-color2);
     padding: 20px;
@@ -128,14 +128,14 @@ p {
     align-items: center;
 }
 
-.hero > article > img {
+.hero-about > article > img {
     margin-bottom: 15px;
-    width: 150px;
+    width: 250px;
     height: auto;
     border-radius: 8px;
 }
 
-.hero > article > p {
+.hero-about > article > p {
     margin: 20px;
     line-height: 1.5;
     text-align: center;
@@ -186,18 +186,12 @@ p {
 .img_card {
     padding: 10px;
     width: 230px;
-    border: 2px solid var(--primary-color);
-    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.img_card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .img_card > img {
@@ -398,7 +392,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--primary-color);
+    background-color: #003357;
 }
 
 .design_container {
@@ -421,4 +415,205 @@ button:hover {
 .design_container > a > img {
     width: 40px;
     filter: brightness(0.8) invert(1);
+}
+
+/*******************************************
+
+    Home
+
+********************************************/
+
+.hero-index {
+    position: relative;
+    text-align: center;
+    
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.newsletter {
+    margin: 0;
+    text-align: center;
+    padding: 30px 20px;
+    padding-bottom: 60px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+    color: var(--accent-color2);
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+.cta {
+    text-align: center;
+    padding: 30px 20px;
+    padding-bottom: 60px;
+    background: #2D3142;
+    color: #fff;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+    color: var(--accent-color2);
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+.cta-link {
+    text-decoration: none;
+    width: 30%;
+    background-color: var(--secondary-color);
+    color: var(--accent-color2);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-link:hover {
+    background-color: #003357;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.grid-item p {
+    color: #555;
+}
+
+/*******************************************
+
+    Trips
+
+********************************************/
+
+.trip-table {
+    padding: 0 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+table tbody tr:hover {
+    background-color: #e9e9e9;
+}
+
+.trip-descriptions {
+    padding: 30px 20px;
+    background: white;
+    text-align: center;
+}
+
+.trip-descriptions h2 {
+    margin-bottom: 20px;
+}
+
+.trip-descriptions .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.trip-descriptions .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.trip-descriptions .grid-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.trip-descriptions .grid-item p {
+    color: #555;
+}
+
+.cta-trips h2 {
+    margin-bottom: 10px;
+}
+
+.cta-trips p {
+    margin-bottom: 20px;
 }
